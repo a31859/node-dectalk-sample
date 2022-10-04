@@ -1,0 +1,18 @@
+{
+  "name": "moonbase-alpha-tts",
+  "version": "0.0.1",
+  "description": "Node JS dectalk server",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "lowdb": "^3.0.0",
+    "morgan": "^1.10.0"
+  },
+  "author": "dnva",
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  dectalk:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: dectalk
+    image: delioamaral/dectalk:5.0.1
+    platform: linux/x86_64
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - ./tmp:/usr/src/tmp
+      - ./db:/usr/src/app/db
+
+networks:
+  default:
+    driver: bridge
